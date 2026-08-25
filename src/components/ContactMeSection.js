@@ -121,6 +121,15 @@ const ContactMeSection = () => {
                   id="type"
                   name="type"
                   {...formik.getFieldProps("type")}
+                  sx={{
+                      "& option": {
+                        color: "white",
+                        backgroundColor: "#512DA8",
+                      },
+                      "& option:hover": {
+                        backgroundColor: "#6B46C1",
+                      },
+                  }}
                 >
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
