@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Heading, VStack } from "@chakra-ui/react";
+import { Heading, Image } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 
 const greeting = "Hello, I am Nick!";
@@ -13,14 +13,21 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
-    <img src="/my-picture.png"
-    alt="My picture"
-    width={400}
-    style={{ borderRadius: '60px' }} 
+    <Image
+      src="/my-picture.png"
+      alt="My picture"
+      width={{ base: '80%', md: '400px' }}
+      borderRadius="60px"
     />
-    <h1 style={{ fontSize: '20px', margin: '5px 0', fontWeight: '400'}}>{greeting}</h1>
-    <h2 style={{ fontSize: '32px', margin: '10px 0', fontWeight: '800'}}>{bio1}</h2>
-    <h3 style={{ fontSize: '32px', margin: '10px 0', fontWeight: 'bold'}}>{bio2}</h3>
+    <Heading as="h1" size={{ base: 'md', md: 'lg' }} mt={4}>
+      {greeting}
+    </Heading>
+    <Heading as="h2" size={{ base: 'lg', md: 'xl' }} mt={2}>
+      {bio1}
+    </Heading>
+    <Heading as="h3" size={{ base: 'lg', md: 'xl' }} mt={2}>
+      {bio2}
+    </Heading>
   </FullScreenSection>
 );
 

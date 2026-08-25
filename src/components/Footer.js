@@ -7,7 +7,7 @@ const Footer = () => {
       <footer>
         <Flex
           margin="0 auto"
-          px={12}
+          px={{ base: 4, md: 12 }}
           color="white"
           justifyContent="center"
           alignItems="center"

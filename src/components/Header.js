@@ -85,37 +85,29 @@ const Header = () => {
     >
       <Box color="white" maxWidth="1280px" margin="0 auto">
         <HStack
-          px={16}
-          py={4}
-          justifyContent="space-between"
-          alignItems="center"
-        >
-          <nav>
-            <HStack spacing={8}>
-              {socials.map((social, index) => (
-                <a
-                  key={index}
-                  href={social.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                >
-                  <FontAwesomeIcon icon={social.icon} size="2x" />
-                </a>
-              ))}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              <a href="/#projects" onClick={handleClick("projects")}>
-                Projects
-              </a>
-              <a href="/#contactme" onClick={handleClick("contactme")}>
-                Contact Me
-              </a>
-            </HStack>
-          </nav>
-        </HStack>
+            px={{ base: 4, md: 16 }}
+            py={4}
+            justifyContent="space-between"
+            alignItems="center"
+            flexDirection={{ base: 'column', md: 'row' }}
+            gap={4}
+          >
+            <nav>
+              <HStack spacing={{ base: 4, md: 8 }}>
+                {socials.map((social, index) => (
+                  <a key={index} href={social.url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={social.icon} size={{ base: 'lg', md: '2x' }} />
+                  </a>
+                ))}
+              </HStack>
+            </nav>
+            <nav>
+              <HStack spacing={{ base: 4, md: 8 }}>
+                <a href="/#projects" onClick={handleClick("projects")}>Projects</a>
+                <a href="/#contactme" onClick={handleClick("contactme")}>Contact Me</a>
+              </HStack>
+            </nav>
+          </HStack>
       </Box>
     </Box>
   );
