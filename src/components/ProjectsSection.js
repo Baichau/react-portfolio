@@ -16,14 +16,14 @@ const projects = [
     description:
       "A Django project with custom models, admin panel configuration, and database integration. Demonstrates backend development skills.",
     getImageSrc: () => require("../images/photo2.jpg"),
-    link: "https://github.com/Baichau/django-admin-project", 
+    link: "https://github.com/Baichau/little-lemon-api", 
   },
   {
-    title: "Little Lemon Restaurant Website",
+    title: "Screed Masters",
     description:
-      "A fully responsive static website for a fictional restaurant. Built with HTML, CSS, and a touch of JavaScript.",
+      "A modern, responsive freelance website built to showcase professional screeding services with a clean user experience.",
     getImageSrc: () => require("../images/photo3.jpg"),
-    link: "https://github.com/Baichau/little-lemon", 
+    link: "https://github.com/Baichau/ScreedMasters-app", 
   },
   {
     title: "React Portfolio",
