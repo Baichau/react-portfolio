@@ -1,9 +1,7 @@
-import { Box, Heading, Text, HStack, Link } from "@chakra-ui/react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { Box, Button, Heading, HStack, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 
-const Card = ({ title, description, imageSrc, link }) => {
+const Card = ({ title, description, imageSrc, imageAlt, technologies, liveLink, repoLink }) => {
   return (
     <Box
       backgroundColor="white"
@@ -13,20 +11,54 @@ const Card = ({ title, description, imageSrc, link }) => {
       p={{ base: 3, md: 4 }}
       transition="transform 0.2s"
       _hover={{ transform: 'scale(1.02)' }}
+      display="flex"
+      flexDirection="column"
     >
-      <img src={imageSrc} width="100%" alt={title} style={{ borderRadius: '8px' }} />
+      <img
+        src={imageSrc}
+        width="100%"
+        height="220"
+        alt={imageAlt}
+        loading="lazy"
+        decoding="async"
+        style={{ borderRadius: '8px', objectFit: 'cover' }}
+      />
       <Heading as="h3" size={{ base: 'sm', md: 'md' }} my={2}>
         {title}
       </Heading>
-      <Text fontSize={{ base: 'xs', md: 'sm' }} color="gray.600" mb={3}>
-        {description}
-      </Text>
-      <Link href={link} isExternal style={{ textDecoration: 'none' }} _hover={{ color: 'blue.500' }}>
-        <HStack spacing={2}>
-          <Text fontSize={{ base: 'xs', md: 'sm' }} fontWeight="bold">See more</Text>
-          <FontAwesomeIcon icon={faArrowRight} size="xs" />
+      <VStack alignItems="flex-start" spacing={3} flex={1}>
+        <Text fontSize={{ base: 'sm', md: 'md' }} color="gray.600">
+          {description}
+        </Text>
+        <Text fontSize="sm" color="gray.700">
+          <strong>Tech:</strong> {technologies.join(", ")}
+        </Text>
+        <HStack spacing={3} flexWrap="wrap" mt="auto">
+          {liveLink && (
+            <Button
+              as="a"
+              href={liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              size="sm"
+              colorScheme="blue"
+            >
+              Live demo
+            </Button>
+          )}
+          <Button
+            as="a"
+            href={repoLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            size="sm"
+            variant="outline"
+            colorScheme="blue"
+          >
+            {liveLink ? "GitHub repo" : "GitHub project"}
+          </Button>
         </HStack>
-      </Link>
+      </VStack>
     </Box>
   );
 };

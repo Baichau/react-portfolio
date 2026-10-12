@@ -1,44 +1,77 @@
-# React Portfolio
+# Nick Babichau | Full-stack Developer
 
-A personal portfolio website built with React and Chakra UI. It showcases my projects, skills, and contact information.
+A React portfolio introducing my work, background, and ways to get in touch.
 
-## Features
+**Live portfolio:** [react-portfolio-vert-omega.vercel.app](https://react-portfolio-vert-omega.vercel.app/)
 
-- Responsive design with Chakra UI.
-- Smooth scrolling navigation.
-- Header that hides on scroll down and shows on scroll up.
-- Social media links (GitHub, LinkedIn, Email, etc.).
-- Projects section with cards.
-- Contact form with validation (if implemented).
-- Alert notifications for form submission.
+## About
 
-## Tech Stack
+I’m a full-stack developer based in Batumi, Georgia. I build responsive web
+experiences and the APIs behind them.
 
-- React (Create React App)
+- **Stack:** React, Node.js, Python
+- **Languages:** English and Russian
+
+## Projects
+
+| Project | Description | Technologies | Live demo | Repository |
+| --- | --- | --- | --- | --- |
+| Weather Finder | Search cities for current weather and conditions. | HTML, CSS, JavaScript, wttr.in API | Source only | [GitHub](https://github.com/Baichau/weather-finder) |
+| Little Lemon Restaurant API | Restaurant API for menus, carts, orders, and role-based access. | Python, Django REST Framework, Djoser, SQLite | Source only | [GitHub](https://github.com/Baichau/little-lemon-api) |
+| Screed Masters | Responsive service website for floor-screeding work. | HTML, CSS, JavaScript, FormSubmit | [Live site](https://baichau.github.io/ScreedMasters-app/) | [GitHub](https://github.com/Baichau/ScreedMasters-app) |
+| React Portfolio | This portfolio, with project links and direct email contact. | React, Chakra UI, JavaScript | [Live site](https://react-portfolio-vert-omega.vercel.app/) | [GitHub](https://github.com/Baichau/react-portfolio) |
+
+## Screenshot
+
+![Screenshot of the portfolio](screenshots/portfolio.jpg)
+
+## Tech stack
+
+- React 18 and Create React App
 - Chakra UI
-- Font Awesome icons
-- React Context for alerts
+- JavaScript
 
-## Live Demo
-
-*(Add your deployed link here, e.g., Vercel/Netlify URL)*
-
-## Screenshots
-
-![Portfolio Screenshot](screenshot.png) *(optional)*
-
-## Getting Started
+## Getting started
 
 ### Prerequisites
 
-- Node.js (v14 or later)
-- npm or yarn
+- Node.js 14 or later
+- npm
 
-### Installation
+### Install and run
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/Baichau/react-portfolio.git
    cd react-portfolio
+   ```
 
-   
+2. Install the locked dependencies:
+
+   ```bash
+   npm ci
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000).
+
+4. Create a production build:
+
+   ```bash
+   npm run build
+   ```
+
+5. Run the tests:
+
+   ```bash
+   npm test
+   ```
+
+The contact action opens a new message in your email application; it does not
+submit a web form or require a third-party form-service account.

@@ -12,22 +12,27 @@ import { Box, HStack } from "@chakra-ui/react";
 const socials = [
   {
     icon: faEnvelope,
+    label: "Email Nick",
     url: "mailto:nikitaburalek1@gmail.com",
   },
   {
     icon: faGithub,
+    label: "GitHub",
     url: "https://github.com/Baichau",
   },
   {
     icon: faLinkedin,
+    label: "LinkedIn",
     url: "https://www.linkedin.com/in/nick-babichau-060289336",
   },
   {
     icon: faMedium,
+    label: "Medium",
     url: "https://medium.com/@nikitaburalek1",
   },
   {
     icon: faStackOverflow,
+    label: "Stack Overflow",
     url: "https://stackoverflow.com/users/33015385/%d0%9d%d0%b8%d0%ba%d0%b8%d1%82%d0%b0-%d0%91%d0%b0%d1%80%d1%81",
   },
 ];
@@ -95,14 +100,15 @@ const Header = () => {
             <nav>
               <HStack spacing={{ base: 4, md: 8 }}>
                 {socials.map((social, index) => (
-                  <a key={index} href={social.url} target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={social.icon} size={{ base: 'lg', md: '2x' }} />
+                  <a key={social.label} aria-label={social.label} href={social.url} target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={social.icon} size="lg" />
                   </a>
                 ))}
               </HStack>
             </nav>
             <nav>
               <HStack spacing={{ base: 4, md: 8 }}>
+                <a href="/#about" onClick={handleClick("about")}>About</a>
                 <a href="/#projects" onClick={handleClick("projects")}>Projects</a>
                 <a href="/#contactme" onClick={handleClick("contactme")}>Contact Me</a>
               </HStack>
