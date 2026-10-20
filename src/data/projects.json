@@ -1,41 +1,107 @@
 [
   {
+    "title": "Cosmic Audio",
+    "description": "Spotify-style music player with a glass interface: local library in the browser, Jamendo search and radio, synced lyrics, equalizer, crossfade and optional friends listening.",
+    "tags": ["React", "Tailwind CSS", "Supabase"],
+    "repo": "https://github.com/Baichau/cosmic-audio",
+    "live": "https://cosmic-audio.vercel.app/",
+    "featured": true
+  },
+  {
+    "title": "Emberlane",
+    "description": "Game and website sharing storefront with Supabase auth, a personal library and wishlist, mini-games, reviews, discussions and row-level security. Not affiliated with Valve or Steam.",
+    "tags": ["React", "Vite", "Supabase"],
+    "repo": "https://github.com/Baichau/emberlane",
+    "live": "https://emberlane-jet.vercel.app/",
+    "featured": true
+  },
+  {
+    "title": "Little Lemon API",
+    "description": "Role-based REST API for a restaurant: menu, cart, orders, manager and delivery-crew roles, with Swagger docs.",
+    "tags": ["Django REST Framework", "Djoser", "Swagger"],
+    "repo": "https://github.com/Baichau/little-lemon-api",
+    "featured": true
+  },
+  {
     "title": "ScreedMasters",
-    "description": "A personal floor application built for a real flooring and screed business.",
-    "tags": ["HTML", "Client work"],
+    "description": "Responsive website for a floor-screed contractor in Gomel, with gallery, FAQ, reviews and contact form.",
+    "tags": ["HTML", "CSS", "Client work"],
     "repo": "https://github.com/Baichau/ScreedMasters-app",
     "featured": true
   },
   {
-    "title": "Dota App",
-    "description": "A fan project that brings back the old Dota 2 legacy, built around game data.",
-    "tags": ["JavaScript", "Game data"],
+    "title": "BitForge",
+    "description": "Local-first digital logic studio with a visual circuit editor, live simulation, campaign challenges and reusable circuit blueprints.",
+    "tags": ["React", "Vite"],
+    "repo": "https://github.com/Baichau/bitforge",
+    "live": "https://bitforge-eta.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "Talk Circle",
+    "description": "Conversation-card app for English speaking clubs: create or join a live room, pick from 200 searchable topics and share one question with everyone.",
+    "tags": ["React", "Supabase Realtime"],
+    "repo": "https://github.com/Baichau/talk-circle",
+    "live": "https://talk-circle.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "Neon Arcade",
+    "description": "Apple-inspired mini-game arcade with 21 games across Reflex, Brain and Luck, filters, pinned favorites and saved personal bests.",
+    "tags": ["React", "Vite"],
+    "repo": "https://github.com/Baichau/neon-arcade",
+    "live": "https://neon-arcade-xi.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "Ghost Racer",
+    "description": "Typing-speed duel against the ghost of your own best run, with live WPM, keystroke replay, a history graph and real quotes from a public API.",
+    "tags": ["React", "Vite", "Public API"],
+    "repo": "https://github.com/Baichau/ghost-racer",
+    "live": "https://ghost-racer-liard.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "Tiny Wins",
+    "description": "A gentle, visual habit tracker that helps you notice the small things you accomplish.",
+    "tags": ["React", "Vite"],
+    "repo": "https://github.com/Baichau/tiny-wins",
+    "live": "https://tiny-wins-bice.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "DotaQuest Hub",
+    "description": "Fan web app with Steam login, quests and rewards.",
+    "tags": ["Node.js", "Express", "Steam OpenID"],
     "repo": "https://github.com/Baichau/Dota_app",
-    "featured": true
+    "featured": false
+  },
+  {
+    "title": "LHL Hockey",
+    "description": "Website for a hockey league.",
+    "tags": ["NestJS", "TypeScript"],
+    "repo": "https://github.com/Baichau/LHL-hockey",
+    "featured": false
   },
   {
     "title": "Timetable App",
     "description": "An app for organising and viewing timetables at a glance.",
-    "tags": ["JavaScript", "Productivity"],
+    "tags": ["JavaScript"],
     "repo": "https://github.com/Baichau/Timetable-App",
-    "featured": true
+    "featured": false
   },
   {
     "title": "Weather Finder",
-    "description": "A simple app that finds the weather for any place you search.",
-    "tags": ["JavaScript", "API"],
-    "repo": "https://github.com/Baichau/weather-finder"
-  },
-  {
-    "title": "LHL Hockey",
-    "description": "A hockey-themed JavaScript project. Add a one-line description here.",
-    "tags": ["JavaScript", "Sports"],
-    "repo": "https://github.com/Baichau/LHL-hockey"
+    "description": "A simple app for finding the weather.",
+    "tags": ["JavaScript"],
+    "repo": "https://github.com/Baichau/weather-finder",
+    "featured": false
   },
   {
     "title": "This portfolio",
-    "description": "The site you’re on: React, Vite and a custom canvas starfield, driven by JSON files.",
+    "description": "The site you are on: React, Vite and a custom canvas starfield, driven by JSON files.",
     "tags": ["React", "Vite"],
-    "repo": "https://github.com/Baichau/react-portfolio"
+    "repo": "https://github.com/Baichau/react-portfolio",
+    "featured": false
   }
 ]
