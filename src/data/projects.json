@@ -1,0 +1,41 @@
+[
+  {
+    "title": "ScreedMasters",
+    "description": "A personal floor application built for a real flooring and screed business.",
+    "tags": ["HTML", "Client work"],
+    "repo": "https://github.com/Baichau/ScreedMasters-app",
+    "featured": true
+  },
+  {
+    "title": "Dota App",
+    "description": "A fan project that brings back the old Dota 2 legacy, built around game data.",
+    "tags": ["JavaScript", "Game data"],
+    "repo": "https://github.com/Baichau/Dota_app",
+    "featured": true
+  },
+  {
+    "title": "Timetable App",
+    "description": "An app for organising and viewing timetables at a glance.",
+    "tags": ["JavaScript", "Productivity"],
+    "repo": "https://github.com/Baichau/Timetable-App",
+    "featured": true
+  },
+  {
+    "title": "Weather Finder",
+    "description": "A simple app that finds the weather for any place you search.",
+    "tags": ["JavaScript", "API"],
+    "repo": "https://github.com/Baichau/weather-finder"
+  },
+  {
+    "title": "LHL Hockey",
+    "description": "A hockey-themed JavaScript project. Add a one-line description here.",
+    "tags": ["JavaScript", "Sports"],
+    "repo": "https://github.com/Baichau/LHL-hockey"
+  },
+  {
+    "title": "This portfolio",
+    "description": "The site you’re on: React, Vite and a custom canvas starfield, driven by JSON files.",
+    "tags": ["React", "Vite"],
+    "repo": "https://github.com/Baichau/react-portfolio"
+  }
+]

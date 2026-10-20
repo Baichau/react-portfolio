@@ -1,77 +1,28 @@
-# Nick Babichau | Full-stack Developer
+# Baichau Portfolio (React + Vite)
 
-A React portfolio introducing my work, background, and ways to get in touch.
+## Run it
+```bash
+npm install
+npm run dev      # local preview
+npm run build    # production build in /dist
+```
+Deploy on Vercel: import the repo, the Vite preset is detected automatically (delete the old `vercel.json` if it points at Create React App).
 
-**Live portfolio:** [react-portfolio-vert-omega.vercel.app](https://react-portfolio-vert-omega.vercel.app/)
+## Add a project (no code changes)
+Open `src/data/projects.json` and add an object:
+```json
+{
+  "title": "My new app",
+  "description": "One sentence about what it does.",
+  "tags": ["React", "API"],
+  "repo": "https://github.com/Baichau/my-new-app",
+  "live": "https://my-new-app.vercel.app",
+  "featured": false
+}
+```
+- `featured: true` projects are always shown. Everything else sits behind **See more**.
+- `live` is optional. If set, the row opens the live site instead of the repo.
 
-## About
-
-I’m a full-stack developer based in Batumi, Georgia. I build responsive web
-experiences and the APIs behind them.
-
-- **Stack:** React, Node.js, Python
-- **Languages:** English and Russian
-
-## Projects
-
-| Project | Description | Technologies | Live demo | Repository |
-| --- | --- | --- | --- | --- |
-| Weather Finder | Search cities for current weather and conditions. | HTML, CSS, JavaScript, wttr.in API | Source only | [GitHub](https://github.com/Baichau/weather-finder) |
-| Little Lemon Restaurant API | Restaurant API for menus, carts, orders, and role-based access. | Python, Django REST Framework, Djoser, SQLite | Source only | [GitHub](https://github.com/Baichau/little-lemon-api) |
-| Screed Masters | Responsive service website for floor-screeding work. | HTML, CSS, JavaScript, FormSubmit | [Live site](https://baichau.github.io/ScreedMasters-app/) | [GitHub](https://github.com/Baichau/ScreedMasters-app) |
-| React Portfolio | This portfolio, with project links and direct email contact. | React, Chakra UI, JavaScript | [Live site](https://react-portfolio-vert-omega.vercel.app/) | [GitHub](https://github.com/Baichau/react-portfolio) |
-
-## Screenshot
-
-![Screenshot of the portfolio](screenshots/portfolio.jpg)
-
-## Tech stack
-
-- React 18 and Create React App
-- Chakra UI
-- JavaScript
-
-## Getting started
-
-### Prerequisites
-
-- Node.js 14 or later
-- npm
-
-### Install and run
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/Baichau/react-portfolio.git
-   cd react-portfolio
-   ```
-
-2. Install the locked dependencies:
-
-   ```bash
-   npm ci
-   ```
-
-3. Start the development server:
-
-   ```bash
-   npm start
-   ```
-
-   Open [http://localhost:3000](http://localhost:3000).
-
-4. Create a production build:
-
-   ```bash
-   npm run build
-   ```
-
-5. Run the tests:
-
-   ```bash
-   npm test
-   ```
-
-The contact action opens a new message in your email application; it does not
-submit a web form or require a third-party form-service account.
+## Change your text
+Headline, bio, facts, tools and contact button all live in `src/data/profile.json`.
+Colors and fonts are CSS variables at the top of `src/index.css`.
