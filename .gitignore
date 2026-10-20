@@ -1,30 +1,3 @@
-# Dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# Production build output
-dist/
-build/
-
-# Testing
-coverage/
-
-# Environment variables (Secrets)
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-eslintcache
-
-# Editor and System files
-.vscode/
-.idea/
+node_modules
+dist
 .DS_Store
-Thumbs.db

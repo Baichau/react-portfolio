@@ -1,0 +1,26 @@
+{
+  "name": "Baichau",
+  "github": "https://github.com/Baichau",
+  "headline": "I build web apps people actually use.",
+  "intro": "I’m Baichau, a JavaScript and React developer. I turn everyday problems, from timetables to flooring jobs, into fast, clean apps.",
+  "about": {
+    "title": "Practical code, polished interface.",
+    "paragraphs": [
+      "I like projects with a clear purpose. Some of mine serve a real trade business, some come from games I love, and all of them are built to be simple to use on any screen.",
+      "Replace this paragraph with your own story: how you started, what you’re learning, and what you want to build next."
+    ]
+  },
+  "facts": [
+    { "label": "Focus", "value": "Front-end and full-stack" },
+    { "label": "Main tools", "value": "JavaScript, React" },
+    { "label": "Public repos", "value": "9 and growing" },
+    { "label": "Status", "value": "Open to opportunities" }
+  ],
+  "stack": ["JavaScript", "React", "HTML and CSS", "Chakra UI", "Git and GitHub", "Vercel"],
+  "contact": {
+    "title": "Let’s build something together.",
+    "text": "Have a project, a role, or just a question? The fastest way to reach me is through GitHub.",
+    "button": "Message me on GitHub",
+    "href": "https://github.com/Baichau"
+  }
+}
